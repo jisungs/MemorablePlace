@@ -17,6 +17,18 @@ class PlacesViewController : UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if places.count == 1 && places[0].count == 0 {
+            places.remove(at: 0)
+            
+            places.append(["name":"Kyoung Bok Palace","lat":"37.579617", "lon":"126.977041"])
+        }
+        
+        table.reloadData()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        <#code#>
     }
     
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -33,6 +45,14 @@ class PlacesViewController : UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: "Cell")
+        
+        if places[indexPath.row]["name"] != nil {
+            cell.textLabel?.text = places[indexPath.row]["name"]
+        }
+        
+        
+        
         return cell
     }
     
