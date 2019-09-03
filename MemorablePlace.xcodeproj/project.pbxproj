@@ -13,6 +13,7 @@
 		96AFCF9D231CEAC400F127AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96AFCF9C231CEAC400F127AE /* Assets.xcassets */; };
 		96AFCFA0231CEAC400F127AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96AFCF9E231CEAC400F127AE /* LaunchScreen.storyboard */; };
 		96AFCFAA231CF19700F127AE /* PlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AFCFA9231CF19700F127AE /* PlacesViewController.swift */; };
+		96AFCFAD231E3F2600F127AE /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96AFCFAC231E3F2600F127AE /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		96AFCF9F231CEAC400F127AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		96AFCFA1231CEAC400F127AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96AFCFA9231CF19700F127AE /* PlacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesViewController.swift; sourceTree = "<group>"; };
+		96AFCFAC231E3F2600F127AE /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96AFCFAD231E3F2600F127AE /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +45,7 @@
 			children = (
 				96AFCF94231CEAC200F127AE /* MemorablePlace */,
 				96AFCF93231CEAC200F127AE /* Products */,
+				96AFCFAB231E3F2600F127AE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,6 +69,14 @@
 				96AFCFA1231CEAC400F127AE /* Info.plist */,
 			);
 			path = MemorablePlace;
+			sourceTree = "<group>";
+		};
+		96AFCFAB231E3F2600F127AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				96AFCFAC231E3F2600F127AE /* CoreLocation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
